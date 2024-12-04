@@ -8,9 +8,9 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true, // Очищення папки dist перед збіркою
+    clean: true, 
   },
-  devtool: 'source-map', // Додає мапи для зручності відладки
+  devtool: 'source-map',
   devServer: {
     static: './dist',
     open: true,
@@ -24,14 +24,14 @@ module.exports = {
     rules: [
       // TypeScript
       {
-        test: /\.ts$/, // Вказуємо, що файл з розширенням .ts повинен бути оброблений
-        exclude: /node_modules/, // Виключаємо директорію node_modules з обробки
+        test: /\.ts$/, 
+        exclude: /node_modules/, 
         use: {
-          loader: 'babel-loader', // Використовуємо babel-loader для компіляції
+          loader: 'babel-loader', 
           options: {
             presets: [
-              '@babel/preset-env', // Перетворення ES6+ у сумісний код JavaScript
-              '@babel/preset-typescript' // Додавання підтримки TypeScript
+              '@babel/preset-env', 
+              '@babel/preset-typescript' 
             ]
             }
         }
