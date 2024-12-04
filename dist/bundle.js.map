@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"mBAIEA,QAAQC,IAAI,UAADC,OAGP,W","sources":["webpack://hm-35/./src/index.ts"],"sourcesContent":["import './style.scss';\r\nimport './variables.less';\r\n\r\nconst greet = (name: string) => {\r\n  console.log(`Hello, ${name}`);\r\n};\r\n\r\ngreet('Webpack');\r\n"],"names":["console","log","concat"],"sourceRoot":""}
