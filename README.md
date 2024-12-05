@@ -1,3 +1,6 @@
+
+# Команды для настройки проекта
+```bash
 npm i -D  webpack webpack-cli webpack-dev-server
 npm install --save-dev html-webpack-plugin mini-css-extract-plugin
 npm i -D less-loader less
